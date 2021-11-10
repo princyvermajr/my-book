@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <title>
+            MY FAMILY BOOK
+        </title>
+    </head>
+    <body>
+        <h1>MY FAMILY BOOK</h1>
+        <hr> <hr>
+        <img id="family" src="https://images-na.ssl-images-amazon.com/images/I/518aG4aF5+L._SX258_BO1,204,203,200_.jpg">
+        <h3 id="first">My Family Book</h3>
+        <button type="button"onclick= "family()">Next</button>
+        <hr>
+        <script>
+            var names=[
+        "My Father (Sunil Verma)",
+        "My Mother (Neha verma)",
+        "My Brother (Swastik verma)",
+        "Me!!! (Princy verma)"
+        ];
+
+        var images=[
+"https://t4.ftcdn.net/jpg/01/38/71/15/360_F_138711505_K9YfscnIghBdBE1MvQbgUGixdRNKEg2P.jpg",
+"https://cdn5.vectorstock.com/i/1000x1000/45/09/cute-cartoon-of-a-young-mother-vector-4414509.jpg",
+"https://image.similarpng.com/very-thumbnail/2020/07/Happy-boy-cartoon-on-transparent-background-PNG.png",
+"https://png.pngtree.com/png-clipart/20190604/original/pngtree-vector-cartoon-girl-with-glasses-png-image_1044496.jpg",
+        ];
+
+        var i=0;
+        function family(){
+document.getElementById("first").innerHtml=names[i];
+document.getElementById("family").src=images[i];
+i++;
+if(i==4){
+    i=0;
+}}
+ </script>
+</body>
+</html>
+  
+ 
